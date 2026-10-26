@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | The Hidden Courtyard Boutique Homestay Alibaug</title>
+  <meta name="description" content="View our curated photo gallery showcasing the central courtyard, handcrafted rooms, open-air stone bathrooms, lush gardens, and romantic dining at The Hidden Courtyard.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================
+       SITE HEADER / NAVIGATION
+       ========================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="site-logo" aria-label="The Hidden Courtyard Home">
+        <div class="logo-symbol">H</div>
+        <div class="logo-text">
+          <span class="logo-title">The Hidden Courtyard</span>
+          <span class="logo-tagline">Boutique Homestay • Alibaug</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms &amp; Suites</a>
+        <a href="experiences.html" class="nav-link">Experiences</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Location &amp; Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="ambiance-btn" id="ambianceToggle" aria-label="Toggle Nature Ambience" title="Play Courtyard Ambience">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <span class="ambiance-tooltip">Play Courtyard Ambience</span>
+        </button>
+
+        <a href="book.html" class="btn btn-primary btn-sm">Book Now</a>
+
+        <button class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">
+        <span>Home</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="rooms.html" class="mobile-nav-link">
+        <span>Rooms &amp; Suites</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="experiences.html" class="mobile-nav-link">
+        <span>Experiences</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="gallery.html" class="mobile-nav-link active">
+        <span>Gallery</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span>Location &amp; Contact</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="book.html" class="mobile-nav-link text-terracotta">
+        <span>Book Now</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div style="font-size: 0.85rem; color: var(--color-text-secondary);">
+        <p><strong>Direct Inquiries:</strong></p>
+        <p>+91 98765 43212</p>
+        <p>stay@hiddencourtyard.in</p>
+      </div>
+      <a href="book.html" class="btn btn-primary" style="width: 100%;">Reserve Your Stay</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       PAGE HERO
+       ========================================== -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-pattern"></div>
+    <div class="container subpage-hero-content">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Gallery</span>
+      </nav>
+      <h1 class="subpage-hero-title">Visual Impressions</h1>
+      <p class="subpage-hero-subtitle">
+        A photographic journey through our laterite courtyards, sunlit suites, organic farm dining, and intimate corners.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FILTERABLE GALLERY SECTION
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--color-warm-white);">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="gallery-filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Perspectives</button>
+        <button class="filter-tab" data-filter="Rooms" role="tab" aria-selected="false">Rooms &amp; Suites</button>
+        <button class="filter-tab" data-filter="Exterior" role="tab" aria-selected="false">Exterior &amp; Courtyards</button>
+        <button class="filter-tab" data-filter="Dining" role="tab" aria-selected="false">Dining &amp; Culinary</button>
+        <button class="filter-tab" data-filter="Experiences" role="tab" aria-selected="false">Estate Experiences</button>
+      </div>
+
+      <!-- 16 Curated Gallery Cards -->
+      <div class="gallery-grid" id="mainGalleryGrid">
+        <!-- 1 -->
+        <div class="gallery-item" data-category="Exterior" data-title="The Central Courtyard &amp; Lily Pond">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Central Courtyard & Lily Pond">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Exterior</span>
+            <h4 class="gallery-overlay-title">The Central Courtyard &amp; Lily Pond</h4>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="gallery-item" data-category="Rooms" data-title="Courtyard Room Interior">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Courtyard Room Interior">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Rooms</span>
+            <h4 class="gallery-overlay-title">Courtyard Room Interior</h4>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="gallery-item" data-category="Rooms" data-title="Garden Suite Private Verandah">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Garden Suite Private Verandah">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Rooms</span>
+            <h4 class="gallery-overlay-title">Garden Suite Private Verandah</h4>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="gallery-item" data-category="Rooms" data-title="Heritage Suite Four-Poster Elegance">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Heritage Suite Four-Poster Elegance">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Rooms</span>
+            <h4 class="gallery-overlay-title">Heritage Suite Four-Poster Elegance</h4>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gallery-item" data-category="Rooms" data-title="Family Suite Living Pavilion">
+          <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80" alt="Family Suite Living Pavilion">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Rooms</span>
+            <h4 class="gallery-overlay-title">Family Suite Living Pavilion</h4>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gallery-item" data-category="Rooms" data-title="Open-Air Natural Stone Bathroom">
+          <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Open-Air Stone Bathroom">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Rooms</span>
+            <h4 class="gallery-overlay-title">Open-Air Natural Stone Bathroom</h4>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="gallery-item" data-category="Exterior" data-title="Estate Architecture &amp; Palm Terraces">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Estate Architecture & Palm Terraces">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Exterior</span>
+            <h4 class="gallery-overlay-title">Estate Architecture &amp; Palm Terraces</h4>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="gallery-item" data-category="Exterior" data-title="Lush Pool &amp; Garden Pathway">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80" alt="Lush Pool & Garden Pathway">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Exterior</span>
+            <h4 class="gallery-overlay-title">Lush Pool &amp; Garden Pathway</h4>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="gallery-item" data-category="Exterior" data-title="Sunlit Courtyard Villa Façade">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Sunlit Courtyard Villa Façade">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Exterior</span>
+            <h4 class="gallery-overlay-title">Sunlit Courtyard Villa Façade</h4>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="gallery-item" data-category="Exterior" data-title="Secluded Shaded Verandahs">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Secluded Shaded Verandahs">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Exterior</span>
+            <h4 class="gallery-overlay-title">Secluded Shaded Verandahs</h4>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="gallery-item" data-category="Dining" data-title="Artisanal Organic Farm Breakfast">
+          <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80" alt="Artisanal Farm Breakfast Spread">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Dining</span>
+            <h4 class="gallery-overlay-title">Artisanal Organic Farm Breakfast</h4>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="gallery-item" data-category="Dining" data-title="Courtyard Candlelight Dinner">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Courtyard Candlelight Dinner">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Dining</span>
+            <h4 class="gallery-overlay-title">Courtyard Candlelight Dinner</h4>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="gallery-item" data-category="Dining" data-title="Konkani Culinary Delicacies">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&q=80" alt="Konkani Culinary Delicacies">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Dining</span>
+            <h4 class="gallery-overlay-title">Konkani Culinary Delicacies</h4>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="gallery-item" data-category="Experiences" data-title="Morning Garden Yoga Pavilion">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Morning Garden Yoga Pavilion">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Experiences</span>
+            <h4 class="gallery-overlay-title">Morning Garden Yoga Pavilion</h4>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="gallery-item" data-category="Experiences" data-title="Night Bonfire &amp; Stargazing Pit">
+          <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80" alt="Night Bonfire & Stargazing Pit">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Experiences</span>
+            <h4 class="gallery-overlay-title">Night Bonfire &amp; Stargazing Pit</h4>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="gallery-item" data-category="Experiences" data-title="Ayurvedic Herbal Spa Cabana">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Ayurvedic Herbal Spa Cabana">
+          <div class="gallery-zoom-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <div class="gallery-item-overlay">
+            <span class="gallery-overlay-cat">Experiences</span>
+            <h4 class="gallery-overlay-title">Ayurvedic Herbal Spa Cabana</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WORKING LIGHTBOX MODAL
+       ========================================== -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Photo Preview Lightbox">
+    <div class="lightbox-content lightbox-content-wrap">
+      <button class="lightbox-btn lightbox-close" aria-label="Close Lightbox">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="lightbox-nav">
+        <button class="lightbox-btn lightbox-prev" aria-label="Previous Image">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="lightbox-btn lightbox-next" aria-label="Next Image">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <div class="lightbox-img-wrapper">
+        <img src="" alt="Fullscreen image display" class="lightbox-img">
+      </div>
+
+      <div class="lightbox-meta">
+        <div class="lightbox-title">The Hidden Courtyard</div>
+        <div class="lightbox-counter">1 / 16</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SITE FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="site-logo">
+            <div class="logo-symbol" style="background: var(--color-gold); color: #1F1915;">H</div>
+            <div class="logo-text">
+              <span class="logo-title">The Hidden Courtyard</span>
+              <span class="logo-tagline" style="color: var(--color-gold);">Alibaug • Maharashtra</span>
+            </div>
+          </div>
+          <p>
+            An intimate retreat embracing nature, courtyard architecture, and unhurried coastal living. Located just minutes from the coast of Alibaug.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="https://wa.me/919876543212" class="social-icon-btn" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="rooms.html" class="footer-link">Rooms &amp; Suites</a>
+            <a href="experiences.html" class="footer-link">Curated Experiences</a>
+            <a href="gallery.html" class="footer-link">Photo Gallery</a>
+            <a href="contact.html" class="footer-link">Location &amp; Directions</a>
+            <a href="book.html" class="footer-link">Direct Booking</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gallery Categories</h4>
+          <div class="footer-links">
+            <a href="gallery.html" class="footer-link">All Views</a>
+            <a href="gallery.html" class="footer-link">Room Interiors</a>
+            <a href="gallery.html" class="footer-link">Courtyards &amp; Gardens</a>
+            <a href="gallery.html" class="footer-link">Dining Moments</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Near River Bend Road, Alibaug, Maharashtra – 402201</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+919876543212" style="color: inherit;">+91 98765 43212</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:stay@hiddencourtyard.in" style="color: inherit;">stay@hiddencourtyard.in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Hidden Courtyard. All rights reserved. Handcrafted Boutique Homestay.</p>
+        <p>Built with passion for peace, nature &amp; heritage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919876543212?text=Hello%20The%20Hidden%20Courtyard%2C%20I%20would%20like%20to%20check%20availability%20and%20make%20a%20booking."
+     class="floating-whatsapp"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with The Hidden Courtyard on WhatsApp">
+    <span class="whatsapp-label">Chat with our Concierge</span>
+    <div class="whatsapp-bubble">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </div>
+  </a>
+
+  <script src="js/rooms-data.js"></script>
+  <script src="js/experiences-data.js"></script>
+  <script src="js/gallery-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

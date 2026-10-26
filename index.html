@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hidden Courtyard | Boutique Hotel & Homestay in Alibaug, Maharashtra</title>
+  <meta name="description" content="Discover The Hidden Courtyard — an intimate luxury boutique homestay nestled amidst lush coastal orchards and tranquil lotus ponds in Alibaug. Handcrafted rooms, organic farm dining, and private courtyards.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================
+       SITE HEADER / NAVIGATION
+       ========================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="site-logo" aria-label="The Hidden Courtyard Home">
+        <div class="logo-symbol">H</div>
+        <div class="logo-text">
+          <span class="logo-title">The Hidden Courtyard</span>
+          <span class="logo-tagline">Boutique Homestay • Alibaug</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms &amp; Suites</a>
+        <a href="experiences.html" class="nav-link">Experiences</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Location &amp; Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Procedural Ambient Sound Toggle -->
+        <button class="ambiance-btn" id="ambianceToggle" aria-label="Toggle Nature Ambience" title="Play Courtyard Ambience">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <span class="ambiance-tooltip">Play Courtyard Ambience</span>
+        </button>
+
+        <a href="book.html" class="btn btn-primary btn-sm">Book Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">
+        <span>Home</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="rooms.html" class="mobile-nav-link">
+        <span>Rooms &amp; Suites</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="experiences.html" class="mobile-nav-link">
+        <span>Experiences</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="gallery.html" class="mobile-nav-link">
+        <span>Gallery</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span>Location &amp; Contact</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="book.html" class="mobile-nav-link text-terracotta">
+        <span>Book Now</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div style="font-size: 0.85rem; color: var(--color-text-secondary);">
+        <p><strong>Direct Inquiries:</strong></p>
+        <p>+91 98765 43212</p>
+        <p>stay@hiddencourtyard.in</p>
+      </div>
+      <a href="book.html" class="btn btn-primary" style="width: 100%;">Reserve Your Stay</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       1. CINEMATIC HERO SECTION
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-media">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=85" alt="The Hidden Courtyard - Heritage boutique resort surrounded by nature">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <span>Intimate Boutique Homestay • Alibaug</span>
+      </div>
+
+      <h1 class="hero-title">
+        The Hidden <span>Courtyard</span>
+      </h1>
+      <p class="hero-tagline">
+        A Peaceful Escape in the Heart of Nature
+      </p>
+
+      <!-- Prominent Booking Bar -->
+      <div class="booking-bar-wrapper">
+        <form class="booking-bar" id="heroBookingForm">
+          <!-- Check-in Date -->
+          <div class="booking-bar-col">
+            <span class="booking-bar-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Check-In
+            </span>
+            <input type="date" id="heroCheckin" class="booking-bar-input" aria-label="Check-in Date" required>
+          </div>
+
+          <!-- Check-out Date -->
+          <div class="booking-bar-col">
+            <span class="booking-bar-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Check-Out
+            </span>
+            <input type="date" id="heroCheckout" class="booking-bar-input" aria-label="Check-out Date" required>
+          </div>
+
+          <!-- Guests -->
+          <div class="booking-bar-col">
+            <span class="booking-bar-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Guests
+            </span>
+            <select id="heroGuests" class="booking-bar-input" aria-label="Number of Guests">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5+">5+ Guests</option>
+            </select>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="booking-bar-col" style="border: none;">
+            <button type="submit" id="heroCheckAvailability" class="booking-bar-btn">
+              <span>Check Availability</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SHORT INTRODUCTION SECTION
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--color-warm-white);">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-media">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1000&q=80" alt="Serene inner courtyard of The Hidden Courtyard" class="intro-img-main">
+          <div class="intro-floating-card">
+            <div class="icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <div>
+              <h4>Rated 4.97 / 5</h4>
+              <p>Over 140+ verified guest reviews celebrating tranquil luxury</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro-text">
+          <span class="section-tag">Sanctuary of Serenity</span>
+          <h2 class="section-title">Where Time Slows Down and Nature Embraces You</h2>
+          <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px;">
+            Tucked away near the meandering riverbend of Alibaug, <strong>The Hidden Courtyard</strong> is a lovingly restored coastal homestay designed for those who appreciate understated elegance, handcrafted spaces, and genuine Konkani hospitality.
+          </p>
+          <p style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 28px;">
+            Here, morning begins with fresh birdsong and hot artisanal filter coffee on your shaded verandah. Our central laterite stone courtyard and lush tropical gardens create a secluded haven just 20 minutes from Mandwa Jetty.
+          </p>
+
+          <div class="intro-features">
+            <div class="intro-feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.5 7.5"></path></svg>
+              </div>
+              <div>
+                <h4>Farm-Fresh Cuisine</h4>
+                <p>Organic ingredients harvested daily from our coastal kitchen garden.</p>
+              </div>
+            </div>
+
+            <div class="intro-feature-item">
+              <div class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div>
+                <h4>Only 4 Intimate Suites</h4>
+                <p>Ensuring absolute privacy, quietude, and personalized estate care.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 36px; display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="rooms.html" class="btn btn-secondary">Explore All Rooms</a>
+            <a href="contact.html" class="btn btn-outline-terracotta">Getting Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURED ROOMS PREVIEW SECTION
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--color-cream-soft);" id="featured-rooms">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 54px;">
+        <span class="section-tag">Handcrafted Accommodations</span>
+        <h2 class="section-title">Rooms Crafted for Quietude</h2>
+        <p class="section-subtitle">
+          Each room celebrates natural materials, open-air living, and subtle luxury with modern comforts.
+        </p>
+      </div>
+
+      <!-- 3 Featured Rooms -->
+      <div class="rooms-grid">
+        <!-- Room 1: Courtyard Room -->
+        <article class="room-card">
+          <div class="room-card-media">
+            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1000&q=80" alt="Courtyard Room at The Hidden Courtyard">
+            <span class="room-badge">Most Popular</span>
+          </div>
+          <div class="room-card-body">
+            <div class="room-header">
+              <h3 class="room-name">Courtyard Room</h3>
+              <div class="room-price-box">
+                <span class="room-price-val">₹8,500</span>
+                <span class="room-price-unit">/ night</span>
+              </div>
+            </div>
+            <p class="room-desc">
+              Opens directly onto our historic inner garden. Features reclaimed teak furniture, terracotta flooring, and an ensuite open-to-sky shower.
+            </p>
+            <div class="room-specs-list">
+              <span class="spec-pill">King Bed</span>
+              <span class="spec-pill">Courtyard View</span>
+              <span class="spec-pill">Free Breakfast</span>
+              <span class="spec-pill">AC &amp; Wi-Fi</span>
+            </div>
+            <div class="room-card-actions">
+              <button class="btn btn-outline-terracotta btn-sm view-room-details-btn" data-room-id="courtyard-room">View Details</button>
+              <button class="btn btn-primary btn-sm book-room-btn" data-room-id="courtyard-room">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 2: Garden Suite -->
+        <article class="room-card">
+          <div class="room-card-media">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80" alt="Garden Suite with private plunge tub">
+            <span class="room-badge" style="background: rgba(92, 107, 74, 0.85);">Private Plunge Tub</span>
+          </div>
+          <div class="room-card-body">
+            <div class="room-header">
+              <h3 class="room-name">Garden Suite</h3>
+              <div class="room-price-box">
+                <span class="room-price-val">₹12,500</span>
+                <span class="room-price-unit">/ night</span>
+              </div>
+            </div>
+            <p class="room-desc">
+              Our signature romantic retreat with private plunge tub, sun deck, and secluded banana grove surroundings.
+            </p>
+            <div class="room-specs-list">
+              <span class="spec-pill">Plunge Tub</span>
+              <span class="spec-pill">Private Lawn</span>
+              <span class="spec-pill">Rain Shower</span>
+              <span class="spec-pill">AC &amp; Wi-Fi</span>
+            </div>
+            <div class="room-card-actions">
+              <button class="btn btn-outline-terracotta btn-sm view-room-details-btn" data-room-id="garden-suite">View Details</button>
+              <button class="btn btn-primary btn-sm book-room-btn" data-room-id="garden-suite">Book Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 3: Heritage Room -->
+        <article class="room-card">
+          <div class="room-card-media">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1000&q=80" alt="Heritage Room with antique teak bed">
+            <span class="room-badge" style="background: rgba(201, 168, 76, 0.85); color: #1B1511;">Heritage Architecture</span>
+          </div>
+          <div class="room-card-body">
+            <div class="room-header">
+              <h3 class="room-name">Heritage Room</h3>
+              <div class="room-price-box">
+                <span class="room-price-val">₹10,500</span>
+                <span class="room-price-unit">/ night</span>
+              </div>
+            </div>
+            <p class="room-desc">
+              Antique four-poster bed, exposed Konkan laterite masonry, hand-carved teak pillars, and veranda overlooking the mango orchard.
+            </p>
+            <div class="room-specs-list">
+              <span class="spec-pill">Four-Poster Bed</span>
+              <span class="spec-pill">Orchard View</span>
+              <span class="spec-pill">Free Breakfast</span>
+              <span class="spec-pill">AC &amp; Wi-Fi</span>
+            </div>
+            <div class="room-card-actions">
+              <button class="btn btn-outline-terracotta btn-sm view-room-details-btn" data-room-id="heritage-room">View Details</button>
+              <button class="btn btn-primary btn-sm book-room-btn" data-room-id="heritage-room">Book Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="rooms.html" class="btn btn-secondary btn-lg">
+          <span>View All 4 Rooms &amp; Suites</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EXPERIENCES PREVIEW SECTION
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--color-warm-white);">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 54px;">
+        <span class="section-tag olive">Memories to Cherish</span>
+        <h2 class="section-title">Immersive Courtyard Experiences</h2>
+        <p class="section-subtitle">
+          From sunrise yoga beneath ancient mango canopies to starlit bonfires and coastal cooking classes.
+        </p>
+      </div>
+
+      <div class="experiences-grid">
+        <!-- Experience 1 -->
+        <article class="experience-card">
+          <div class="experience-media">
+            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80" alt="Farm to table breakfast">
+            <span class="experience-duration-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              1.5 Hours
+            </span>
+          </div>
+          <div class="experience-body">
+            <span class="experience-cat">Culinary Experience</span>
+            <h3 class="experience-title">Farm-to-Table Breakfast</h3>
+            <p class="experience-desc">
+              Savor artisanal morning feasts with heirloom grains, courtyard herb butter, coastal coconut, and warm sourdough.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="experiences.html" class="btn btn-outline-terracotta btn-sm" style="width: 100%;">View Experience Details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience 2 -->
+        <article class="experience-card">
+          <div class="experience-media">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Yoga and meditation outdoors">
+            <span class="experience-duration-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              1 Hour
+            </span>
+          </div>
+          <div class="experience-body">
+            <span class="experience-cat">Wellness</span>
+            <h3 class="experience-title">Yoga &amp; Meditation Sessions</h3>
+            <p class="experience-desc">
+              Rebalance body and mind with guided Hatha yoga and sound bowl meditation under the shade of our mango canopy.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="experiences.html" class="btn btn-outline-terracotta btn-sm" style="width: 100%;">View Experience Details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Experience 3 -->
+        <article class="experience-card">
+          <div class="experience-media">
+            <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80" alt="Sunset bonfire under the stars">
+            <span class="experience-duration-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              2 Hours
+            </span>
+          </div>
+          <div class="experience-body">
+            <span class="experience-cat">Evening Ambiance</span>
+            <h3 class="experience-title">Sunset Bonfire &amp; Stargazing</h3>
+            <p class="experience-desc">
+              Gather around crackling cedar embers under velvet night skies with warm spiced drinks and soulful acoustic notes.
+            </p>
+            <div style="margin-top: auto;">
+              <a href="experiences.html" class="btn btn-outline-terracotta btn-sm" style="width: 100%;">View Experience Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="experiences.html" class="btn btn-primary">Discover All 6 Experiences</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GUEST REVIEWS / TESTIMONIALS SLIDER
+       ========================================== -->
+  <section class="section-padding testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 48px;">
+        <span class="section-tag">Guest Reflections</span>
+        <h2 class="section-title">Words From Our Travelers</h2>
+        <p class="section-subtitle">Real experiences shared by guests who discovered their peaceful escape with us.</p>
+      </div>
+
+      <div class="testimonial-slider-wrapper">
+        <!-- Review 1 -->
+        <div class="testimonial-card active" data-index="0">
+          <div class="testimonial-stars">
+            ★★★★★
+          </div>
+          <p class="testimonial-quote">
+            "The Hidden Courtyard is pure poetry. From the warm terracotta floors to the fragrant breeze through the garden suite, we didn’t want to leave. The farm breakfast with fresh coconut chutney was the best meal we’ve had in Maharashtra."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Ananya & Siddharth Mehta" class="author-avatar">
+            <div class="author-info">
+              <h4>Ananya &amp; Siddharth Mehta</h4>
+              <p>Mumbai • Stayed in Garden Suite (October 2026)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card" data-index="1">
+          <div class="testimonial-stars">
+            ★★★★★
+          </div>
+          <p class="testimonial-quote">
+            "Only 20 minutes from Mandwa Jetty, but you feel transported to another century. The heritage architecture, warm brass lanterns at night, and the guided village walk gave our family the digital detox we desperately needed."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Vikramaditya Roy" class="author-avatar">
+            <div class="author-info">
+              <h4>Vikramaditya Roy</h4>
+              <p>Pune • Stayed in Heritage Room (September 2026)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card" data-index="2">
+          <div class="testimonial-stars">
+            ★★★★★
+          </div>
+          <p class="testimonial-quote">
+            "The level of thought and genuine warmth from the staff is unmatched. Sitting by the courtyard bonfire with acoustic music while our children played on the lawn was unforgettable. Highly recommend booking well in advance!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Pooja Sharma" class="author-avatar">
+            <div class="author-info">
+              <h4>Pooja &amp; Raghav Sharma</h4>
+              <p>Bengaluru • Stayed in Family Suite (August 2026)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn prev" aria-label="Previous Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="slider-dots">
+            <span class="slider-dot active" data-index="0"></span>
+            <span class="slider-dot" data-index="1"></span>
+            <span class="slider-dot" data-index="2"></span>
+          </div>
+          <button class="slider-btn next" aria-label="Next Testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL CTA BANNER
+       ========================================== -->
+  <section class="section-padding" style="background-color: var(--color-warm-white);">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-banner-bg"></div>
+        <div class="cta-banner-content">
+          <span class="hero-badge" style="margin-bottom: 16px;">Direct Booking Privileges</span>
+          <h2>Your Sanctuary is Waiting in Alibaug</h2>
+          <p>
+            Book directly through our website to enjoy complimentary artisanal breakfast, priority room selection, and flexible rescheduling.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+            <a href="book.html" class="btn btn-gold btn-lg">Reserve Your Room Now</a>
+            <a href="https://wa.me/919876543212?text=Hello%20The%20Hidden%20Courtyard%2C%20I%20would%20like%20to%20check%20availability%20and%20make%20a%20booking." target="_blank" rel="noopener noreferrer" class="btn btn-outline-white btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span>Instant WhatsApp Inquiry</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SITE FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand">
+          <div class="site-logo">
+            <div class="logo-symbol" style="background: var(--color-gold); color: #1F1915;">H</div>
+            <div class="logo-text">
+              <span class="logo-title">The Hidden Courtyard</span>
+              <span class="logo-tagline" style="color: var(--color-gold);">Alibaug • Maharashtra</span>
+            </div>
+          </div>
+          <p>
+            An intimate retreat embracing nature, courtyard architecture, and unhurried coastal living. Located just minutes from the coast of Alibaug.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://wa.me/919876543212" class="social-icon-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="rooms.html" class="footer-link">Rooms &amp; Suites</a>
+            <a href="experiences.html" class="footer-link">Curated Experiences</a>
+            <a href="gallery.html" class="footer-link">Photo Gallery</a>
+            <a href="contact.html" class="footer-link">Location &amp; Directions</a>
+            <a href="book.html" class="footer-link">Direct Booking</a>
+          </div>
+        </div>
+
+        <!-- Accommodation -->
+        <div class="footer-col">
+          <h4>Rooms</h4>
+          <div class="footer-links">
+            <a href="rooms.html" class="footer-link">Courtyard Room</a>
+            <a href="rooms.html" class="footer-link">Garden Suite</a>
+            <a href="rooms.html" class="footer-link">Heritage Room</a>
+            <a href="rooms.html" class="footer-link">Family Suite</a>
+          </div>
+        </div>
+
+        <!-- Contact & Location -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Near River Bend Road, Alibaug, Maharashtra – 402201</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+919876543212" style="color: inherit;">+91 98765 43212</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:stay@hiddencourtyard.in" style="color: inherit;">stay@hiddencourtyard.in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Hidden Courtyard. All rights reserved. Handcrafted Boutique Homestay.</p>
+        <p>Built with passion for peace, nature &amp; heritage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       ROOM DETAILS MODAL (UNIVERSAL)
+       ========================================== -->
+  <div class="modal-overlay" id="roomDetailsModal" role="dialog" aria-modal="true" aria-labelledby="modalRoomName">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Close Room Details">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-gallery-strip">
+        <img id="modalMainImg" src="" alt="Room detail main photo" class="modal-gallery-main">
+        <div class="modal-gallery-sub">
+          <img id="modalSubImg1" src="" alt="Room detail perspective 1">
+          <img id="modalSubImg2" src="" alt="Room detail perspective 2">
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-room-header">
+          <div>
+            <span id="modalRoomSubtitle" class="section-tag" style="margin-bottom: 8px;"></span>
+            <h2 id="modalRoomName" style="font-size: 2rem;"></h2>
+          </div>
+          <div style="text-align: right;">
+            <div id="modalRoomPrice" style="font-size: 1.8rem; font-weight: 700; color: var(--color-terracotta); font-family: var(--font-serif);"></div>
+            <span style="font-size: 0.8rem; color: var(--color-text-muted);">per night (excl. taxes)</span>
+          </div>
+        </div>
+
+        <!-- Specs Bar -->
+        <div class="modal-specs-bar">
+          <div class="modal-spec-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            <span id="modalRoomSize"></span>
+          </div>
+          <div class="modal-spec-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            <span id="modalRoomCapacity"></span>
+          </div>
+          <div class="modal-spec-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg>
+            <span id="modalRoomBed"></span>
+          </div>
+          <div class="modal-spec-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            <span id="modalRoomView"></span>
+          </div>
+        </div>
+
+        <p id="modalRoomDesc" style="color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 24px;"></p>
+
+        <h4 style="font-size: 1.1rem; margin-bottom: 12px; font-family: var(--font-sans); font-weight: 700;">Included Amenities</h4>
+        <div class="modal-amenities-grid" id="modalAmenitiesList"></div>
+
+        <h4 style="font-size: 1.1rem; margin-bottom: 12px; font-family: var(--font-sans); font-weight: 700;">Special Highlights</h4>
+        <ul id="modalHighlightsList" style="margin-bottom: 32px;"></ul>
+
+        <div style="display: flex; gap: 16px; justify-content: flex-end;">
+          <button class="btn btn-primary btn-lg" id="modalBookBtn" style="width: 100%;">
+            <span>Proceed to Book This Room</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP BUTTON (GLOBAL REQUIREMENT)
+       ========================================== -->
+  <a href="https://wa.me/919876543212?text=Hello%20The%20Hidden%20Courtyard%2C%20I%20would%20like%20to%20check%20availability%20and%20make%20a%20booking."
+     class="floating-whatsapp"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with The Hidden Courtyard on WhatsApp">
+    <span class="whatsapp-label">Chat with our Concierge</span>
+    <div class="whatsapp-bubble">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </div>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/rooms-data.js"></script>
+  <script src="js/experiences-data.js"></script>
+  <script src="js/gallery-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
